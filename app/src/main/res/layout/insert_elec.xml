@@ -1,0 +1,158 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intel2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Electrician Page"
+        android:gravity="center"
+        android:textColor="#FFFDE7"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        >
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="13dp"
+            android:text="First Name:"
+            />
+
+        <EditText
+            android:id="@+id/EdtFirstName"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="#F3E5F5"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+
+        <TextView
+            android:id="@+id/textLastName"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Last Name:"
+            />
+
+
+        <EditText
+            android:id="@+id/EdtLastName"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3E5F5"
+            android:layout_marginTop="20dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+
+        <TextView
+            android:id="@+id/txtElec"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Worker ID:"
+            />
+
+        <EditText
+            android:id="@+id/EdtElec"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3E5F5"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Password:"
+            />
+
+        <EditText
+            android:id="@+id/EdtElecPass"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3E5F5"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clearcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFDE7"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Clear Fields" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFDE7"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Add" />
+
+
+
+
+</LinearLayout>

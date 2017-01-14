@@ -1,0 +1,201 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intel2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Electrician Page"
+        android:gravity="center"
+        android:textColor="#FFFDE7"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        >
+
+
+        <TextView
+        android:id="@+id/text2"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="4dp"
+        android:textStyle="bold"
+        android:text="First Name:"
+        />
+
+        <TextView
+            android:id="@+id/text3"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        >
+
+
+        <TextView
+            android:id="@+id/text4"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:text="Last Name:"
+            />
+
+        <TextView
+            android:id="@+id/text5"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+
+        <TextView
+            android:id="@+id/text6"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:text="Worker ID:"
+            />
+
+        <TextView
+            android:id="@+id/text7"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+
+        <TextView
+            android:id="@+id/text8"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:text="Completed Missions:"
+            />
+
+        <TextView
+            android:id="@+id/text9"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+
+        <TextView
+            android:id="@+id/text10"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:text="UnCompleted Missions:"
+            />
+
+        <TextView
+            android:id="@+id/text11"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/ViewMis"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:textColor="#FFFDE7"
+    android:textStyle="bold"
+    android:text="View Missions" />
+
+    <Button
+        android:id="@+id/Sms"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFDE7"
+        android:textStyle="bold"
+        android:text="Send SMS to worker" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFDE7"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:text="Delete Worker" />
+
+
+
+
+</LinearLayout>

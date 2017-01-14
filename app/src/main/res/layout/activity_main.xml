@@ -1,0 +1,118 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".MainActivity" >
+
+
+ <TextView
+     android:id="@+id/textView1"
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:text="log in Page"
+     android:gravity="center"
+     android:textColor="#FFFDE7"
+     android:textStyle="bold"
+     android:layout_marginBottom="40dp"
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     />
+
+ <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+     android:background="@drawable/intel"
+     android:layout_marginTop="40dp"
+  android:orientation="vertical"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true">
+
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:gravity="center"
+      android:paddingLeft="20dp"
+      android:text="Welcome to Intel- electrician missions Managment app"
+      android:textAlignment="center"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_marginBottom="20dp"
+      android:textColor="#FAFAFA"
+      android:textSize="15sp"
+      android:typeface="serif" />
+
+
+  <EditText
+      android:id="@+id/UserTxt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="Worker ID"
+      android:layout_marginRight="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginBottom="30dp"
+      android:layout_gravity="center"
+      android:textColor="#212121"
+      android:textSize="20dp"
+      android:background="#FFFDE7">
+      <requestFocus />
+  </EditText>
+
+  <EditText
+      android:id="@+id/PasswordTxt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="Password"
+      android:layout_marginRight="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_gravity="center"
+      android:textColor="#212121"
+      android:textSize="20dp"
+      android:background="#FFFDE7"
+      android:layout_marginBottom="10dp"
+      android:inputType="textPassword" />
+
+  <CheckBox
+      android:id="@+id/saveLoginCheckBox"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/PasswordTxt"
+      android:layout_marginLeft="40dp"
+      android:text="Remember me"
+      android:layout_marginBottom="30dp"
+      android:textColor="#FFF" />
+
+  <Button
+      android:id="@+id/LoginButton"
+      android:layout_width="wrap_content"
+      android:layout_height="40dp"
+      android:layout_marginTop="40dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginLeft="15dp"
+      android:textColor="#212121"
+      android:layout_gravity="center"
+      android:background="#F5F5F5"
+      android:textStyle="bold"
+      android:text="Submit" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:gravity="center"
+      android:text="Forget your password?"
+      android:textColor="#FFFDE7"
+      android:textStyle="bold"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+ </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/intel2"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manager Page"
+            android:gravity="center"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of missions in Data Base: "
+            android:textSize="15dp"
+            android:gravity="left"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of unfinished missions: "
+            android:gravity="left"
+            android:textColor="#FFFDE7"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/addElecButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFDE7"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_button"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Add electrician" />
+
+
+        <Button
+            android:id="@+id/viewElectrician"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFDE7"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_button"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="View electricians list" />
+
+        <Button
+            android:id="@+id/viewMissions"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFDE7"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_button"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="View Missions" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
