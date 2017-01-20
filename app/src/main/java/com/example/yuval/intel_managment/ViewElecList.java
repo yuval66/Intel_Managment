@@ -33,12 +33,9 @@ public class ViewElecList extends Activity {
             TableRow row = new TableRow(this);
             row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.FILL_PARENT,
                     TableRow.LayoutParams.WRAP_CONTENT));
-            if(i % 2 == 0)
-            {
+            if (i % 2 == 0) {
                 row.setBackgroundColor(Color.parseColor("#80DEEA"));
-            }
-            else
-            {
+            } else {
                 row.setBackgroundColor(Color.parseColor("#B2EBF2"));
             }
             row.setClickable(true);
@@ -47,25 +44,24 @@ public class ViewElecList extends Activity {
             txtview1.setHeight(80);
             txtview1.setTextSize(20);
             txtview1.setGravity(Gravity.CENTER);
-          //  txtview1.setPadding(0,0,0,10);
+            //  txtview1.setPadding(0,0,0,10);
 
             TextView txtview2 = new TextView(this);
             txtview2.setHeight(80);
             txtview2.setTextSize(20);
             txtview2.setGravity(Gravity.CENTER);
-          //  txtview2.setPadding(0,0,0,10);
+            //  txtview2.setPadding(0,0,0,10);
 
             TextView txtview3 = new TextView(this);
             txtview3.setHeight(80);
             txtview3.setTextSize(20);
             txtview3.setGravity(Gravity.CENTER);
-         //   txtview3.setPadding(0,0,0,10);
+            //   txtview3.setPadding(0,0,0,10);
 
             String s = list.get(i);
             final String[] arr = s.split(" ");
 
-            if(!(arr[0].toString().equals("11410202")))
-            {
+            if (!(arr[0].toString().equals("11410202"))) {
                 txtview1.setText(arr[0].toString());
                 row.addView(txtview1);
                 txtview2.setText(arr[1].toString());
@@ -76,9 +72,9 @@ public class ViewElecList extends Activity {
                     public void onClick(View view) {
                         ArrayList<String> details = new ArrayList<String>();
 
-                        details.add(0,arr[0].toString());
-                        details.add(1,arr[1].toString());
-                        details.add(2,arr[2].toString());
+                        details.add(0, arr[0].toString());
+                        details.add(1, arr[1].toString());
+                        details.add(2, arr[2].toString());
 
                         Intent i = new Intent(ViewElecList.this, ElecPage.class);
                         i.putExtra("WorkerDetails", details);
@@ -88,7 +84,12 @@ public class ViewElecList extends Activity {
 
                 tl.addView(row);
             }
-
         }
+
+    }
+    public void onBackPressed()
+    {
+        Intent intent = new Intent(ViewElecList.this, ManagerActicvity.class);
+        startActivity(intent);
     }
 }

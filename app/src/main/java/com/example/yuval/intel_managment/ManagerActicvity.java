@@ -64,5 +64,9 @@ public class ManagerActicvity extends AppCompatActivity {
 
     }
 
-
+    public void onBackPressed()
+    {
+        Intent intent = new Intent(ManagerActicvity.this, MainActivity.class);
+        startActivity(intent);
+    }
 }
