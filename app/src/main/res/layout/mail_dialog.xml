@@ -1,0 +1,72 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:background="@drawable/intel2"
+    android:layout_weight="1">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Mail"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFDE7"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:textSize="30dp" />
+
+
+
+        <EditText
+            android:id = "@+id/edtSubject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:focusable="false"
+            android:background="#FFFDE7"
+            android:textSize="30dp"
+            android:text="Subject"
+            />
+
+
+
+
+
+            <EditText
+                android:id = "@+id/edttxt2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:focusable="false"
+                android:background="#FFFDE7"
+                android:textSize="30dp"
+                android:text="Message..."
+                />
+
+        <Button
+            android:id="@+id/SendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Send Mail" />
+
+        </LinearLayout>
+
+    </ScrollView>

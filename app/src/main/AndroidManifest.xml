@@ -1,24 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.yuval.intel_managment">
+    package="my.app.yuval.intel_managment">
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
 
     <application
+
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
+        android:icon="@drawable/logo"
+        android:label="Yugi"
+        android:layoutDirection="ltr"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name="my.app.yuval.intel_managment.MainActivity"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ManagerActicvity"></activity>
-        <activity android:name=".ViewElecList"></activity>
-        <activity android:name=".InsertElecActivity"></activity>
-        <activity android:name=".ElecPage"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ManagerActicvity"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ViewElecList"></activity>
+        <activity android:name="my.app.yuval.intel_managment.InsertElecActivity"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ElecPage"></activity>
+        <activity android:name="my.app.yuval.intel_managment.AddMission"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ElecActivity"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ShowMissionsForElec"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ShowMissionsForManager"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ShowPhoto"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ViewElecMissions"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ViewMyMissions"></activity>
+        <activity android:name="my.app.yuval.intel_managment.ChangePasswordActivity"></activity>
+        <activity android:name="my.app.yuval.intel_managment.SendMail"></activity>
+        <activity android:name="my.app.yuval.intel_managment.Chart"></activity>
+
+
+        <receiver android:name="my.app.yuval.intel_managment.MyBroadcastReceiver"
+            android:enabled="true" >
+        </receiver><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
 
     </application>
 

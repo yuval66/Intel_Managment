@@ -1,0 +1,366 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/intel2"
+    android:scrollbars="none"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Mission Page"
+        android:gravity="center"
+        android:textColor="#FFFDE7"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            >
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFDE7"
+                android:text="Task title:"
+                />
+
+            <EditText
+                android:id="@+id/Edttitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:layout_marginRight="40dp"
+                android:background="#F3E5F5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layAssign"
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:visibility="gone"
+            >
+
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFDE7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Assign to:"
+                />
+
+            <Spinner
+                android:id="@+id/spinSorting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="8dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        >
+
+
+        <TextView
+        android:id="@+id/text2"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+            android:textColor="#FFFDE7"
+            android:text="Start Date:"
+        />
+
+        <Button
+            android:id="@+id/startDate"
+            android:layout_marginTop="20dp"
+            android:onClick="setDate"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/date"
+            />
+
+        <TextView
+            android:id="@+id/textStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        >
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFDE7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="End Date:  "
+            />
+
+        <Button
+            android:id="@+id/EndDate"
+            android:layout_marginTop="20dp"
+            android:layout_width="45dp"
+            android:onClick="setDate2"
+            android:layout_height="45dp"
+            android:background="@drawable/date"
+            />
+
+        <TextView
+            android:id="@+id/textEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFDE7"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        >
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFDE7"
+            android:text="Asset place:"
+            />
+
+        <Spinner
+            android:id="@+id/spinAssetPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="8dp"
+            android:spinnerMode="dropdown" />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            >
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFDE7"
+                android:text="Asset floor:"
+                />
+
+            <Spinner
+                android:id="@+id/spinAssetFloor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="8dp"
+                android:spinnerMode="dropdown" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            >
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFDE7"
+                android:text="Asset Name:"
+                />
+
+            <Spinner
+                android:id="@+id/spinAssetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="8dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        >
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFDE7"
+            android:text="Photo:"
+            />
+
+        <Button
+        android:id="@+id/photo"
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:background="@drawable/camera"
+        />
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFDE7"
+            android:text="Or"
+            />
+
+        <Button
+            android:id="@+id/load"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@drawable/load"
+            />
+
+        <Button
+            android:id="@+id/viewPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:text="View Photo" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        >
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFDE7"
+            android:text="Notes:"
+            />
+
+        <EditText
+            android:id="@+id/EdtNotes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:background="#F3E5F5"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        >
+    <Button
+        android:id="@+id/clearcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="40dp"
+        android:text="Clear Fields" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="Add" />
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>

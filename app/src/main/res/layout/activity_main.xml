@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121"
-    tools:context=".MainActivity" >
+    android:background="@drawable/intel2"
+    tools:context="my.app.yuval.intel_managment.MainActivity" >
 
 
  <TextView
@@ -21,7 +21,6 @@
  <LinearLayout
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-     android:background="@drawable/intel"
      android:layout_marginTop="40dp"
   android:orientation="vertical"
      android:layout_alignParentTop="true"
@@ -31,17 +30,15 @@
 
   <TextView
       android:id="@+id/textView4"
-      android:layout_width="wrap_content"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="30dp"
+      android:text="Welcome to tasks managment app"
       android:gravity="center"
-      android:paddingLeft="20dp"
-      android:text="Welcome to Intel- electrician missions Managment app"
-      android:textAlignment="center"
       android:textAppearance="?android:attr/textAppearanceMedium"
       android:layout_marginBottom="20dp"
       android:textColor="#FAFAFA"
-      android:textSize="15sp"
+      android:textSize="17dp"
       android:typeface="serif" />
 
 
@@ -57,7 +54,7 @@
       android:layout_marginBottom="30dp"
       android:layout_gravity="center"
       android:textColor="#212121"
-      android:textSize="20dp"
+      android:textSize="25dp"
       android:background="#FFFDE7">
       <requestFocus />
   </EditText>
@@ -72,7 +69,7 @@
       android:layout_marginLeft="15dp"
       android:layout_gravity="center"
       android:textColor="#212121"
-      android:textSize="20dp"
+      android:textSize="25dp"
       android:background="#FFFDE7"
       android:layout_marginBottom="10dp"
       android:inputType="textPassword" />
@@ -83,9 +80,11 @@
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/PasswordTxt"
+      android:textSize="16dp"
       android:layout_marginLeft="40dp"
       android:text="Remember me"
       android:layout_marginBottom="30dp"
+      android:buttonTint="#FFF"
       android:textColor="#FFF" />
 
   <Button
@@ -96,13 +95,14 @@
       android:layout_marginRight="15dp"
       android:layout_marginLeft="15dp"
       android:textColor="#212121"
+      android:textSize="18dp"
       android:layout_gravity="center"
       android:background="#F5F5F5"
       android:textStyle="bold"
       android:text="Submit" />
 
-  <TextView
-      android:id="@+id/textView2"
+  <Button
+      android:id="@+id/forgetbtn"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_marginTop="40dp"
@@ -110,6 +110,8 @@
       android:text="Forget your password?"
       android:textColor="#FFFDE7"
       android:textStyle="bold"
+      android:textSize="20dp"
+      android:background="@android:color/transparent"
       android:textAppearance="?android:attr/textAppearanceMedium" />
 
 

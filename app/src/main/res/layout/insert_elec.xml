@@ -10,7 +10,7 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Electrician Page"
+        android:text="Add Worker Page"
         android:gravity="center"
         android:textColor="#FFFDE7"
         android:layout_marginTop="10dp"
@@ -32,13 +32,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="13dp"
+            android:layout_marginRight="20dp"
             android:text="First Name:"
+            android:textColor="#FFFDE7"
             />
 
         <EditText
             android:id="@+id/EdtFirstName"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="30dp"
             android:background="#F3E5F5"
             android:layout_marginTop="20dp"
@@ -57,16 +58,17 @@
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="13dp"
+            android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
+            android:textColor="#FFFDE7"
             android:text="Last Name:"
             />
 
 
         <EditText
             android:id="@+id/EdtLastName"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_marginRight="40dp"
             android:background="#F3E5F5"
@@ -87,15 +89,74 @@
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#FFFDE7"
             android:text="Worker ID:"
             />
 
         <EditText
             android:id="@+id/EdtElec"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3E5F5"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+
+        <TextView
+            android:id="@+id/txtMail"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="78dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Mail:"
+            android:textColor="#FFFDE7"
+            />
+
+        <EditText
+            android:id="@+id/EdtMail"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:textSize="15dp"
+            android:background="#F3E5F5"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFDE7"
+            android:text="Phone:"
+            />
+
+        <EditText
+            android:id="@+id/EdtPhone"
+            android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_marginRight="40dp"
             android:background="#F3E5F5"
@@ -115,15 +176,16 @@
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="17dp"
+            android:layout_marginRight="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
+            android:textColor="#FFFDE7"
             android:text="Password:"
             />
 
         <EditText
             android:id="@+id/EdtElecPass"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_marginRight="40dp"
             android:background="#F3E5F5"
@@ -137,7 +199,8 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
-        android:textColor="#FFFDE7"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
         android:layout_gravity="center"
         android:textStyle="bold"
         android:text="Clear Fields" />
@@ -147,7 +210,9 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:textColor="#FFFDE7"
+        android:textSize="20dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
         android:layout_gravity="center"
         android:textStyle="bold"
         android:text="Add" />

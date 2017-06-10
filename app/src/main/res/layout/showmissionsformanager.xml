@@ -1,0 +1,354 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/intel2"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mission Page"
+        android:gravity="center"
+        android:textColor="#FFFDE7"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <View android:background="#ffffff"
+            android:layout_width = "match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_height="1dp"/>
+
+
+        <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dip"
+        >
+
+            <TextView
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="4dp"
+                android:textStyle="bold"
+                android:textColor="#FFFDE7"
+                android:text="Task Title:"
+                />
+
+            <TextView
+                android:id="@+id/text20"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFDE7"
+                android:layout_marginTop="10dp"
+                />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dip"
+            >
+
+        <TextView
+            android:id="@+id/text2"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:textColor="#FFFDE7"
+            android:text="Asset Name:"
+            />
+
+        <TextView
+            android:id="@+id/text3"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        >
+
+
+        <TextView
+            android:id="@+id/text4"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textColor="#FFFDE7"
+            android:textStyle="bold"
+            android:text="Name:"
+            />
+
+        <TextView
+            android:id="@+id/text5"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        >
+
+        <TextView
+            android:id="@+id/text6"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:text="Worker ID:"
+            />
+
+        <TextView
+            android:id="@+id/text7"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        >
+
+        <TextView
+            android:id="@+id/text8"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:textColor="#FFFDE7"
+            android:text="Start Date:"
+            />
+
+        <TextView
+            android:id="@+id/text9"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay4"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        >
+
+        <TextView
+            android:id="@+id/text10"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textColor="#FFFDE7"
+            android:textStyle="bold"
+            android:text="End Date:"
+            />
+
+        <TextView
+            android:id="@+id/text11"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        >
+
+        <TextView
+            android:id="@+id/text12"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:textColor="#FFFDE7"
+            android:text="Status:"
+            />
+
+        <TextView
+            android:id="@+id/text13"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        >
+
+        <TextView
+            android:id="@+id/text14"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:textColor="#FFFDE7"
+            android:text="Notes:"
+            />
+
+        <TextView
+            android:id="@+id/text15"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFDE7"
+            android:layout_marginTop="10dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay6"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFDE7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="4dp"
+            android:textStyle="bold"
+            android:text="Photo:"
+            />
+
+        <Button
+            android:id="@+id/photo"
+            android:layout_marginTop="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/camera"
+            />
+
+        <Button
+            android:id="@+id/viewPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:text="View Photo" />
+
+    </LinearLayout>
+
+        <View android:background="#ffffff"
+            android:layout_width = "match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/Sms"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFDE7"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:drawableRight="@drawable/button"
+        android:layout_marginLeft="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Send SMS to worker" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFDE7"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:drawableRight="@drawable/button"
+        android:layout_marginLeft="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Delete mission" />
+
+
+    </LinearLayout>
+
+</ScrollView>
